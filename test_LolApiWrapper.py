@@ -2,7 +2,7 @@ from LolApiWrapper import wrapper
 
 
 def test_Summoner_methods():
-    # Test the methods to get Summoner objects
+    """Test the Summoner-V4 class"""
 
     name = 'fake-name' # fill in with a valid name
     accountId = 'fake-accountId' # fill in with a valid accountId
