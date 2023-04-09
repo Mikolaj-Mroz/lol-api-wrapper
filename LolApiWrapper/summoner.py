@@ -12,6 +12,7 @@ class Summoner():
                  summonerId: str = None, 
                  name: str = None):
         
+        # Check if the region is valid
         if region not in ['br1', 'eun1', 'euw1', 'jp1', 'kr', 'la1', 'la2', 'na1', 'oc1', 'tr1', 'ru', 'pbe1']:
             raise ValueError('Invalid region')
 
@@ -33,6 +34,7 @@ class Summoner():
             api_key
             )
         
+        # Check if the request was successful
         if response.status_code == 404:
             raise ValueError('Summoner not found')
         elif response.status_code == 429:
