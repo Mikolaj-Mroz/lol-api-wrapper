@@ -1,4 +1,5 @@
 from summoner import Summoner
+from lolstatus import LolStatus
 
 
 class Wrapper():
@@ -23,3 +24,7 @@ class Wrapper():
     def get_summoner_by_summonerId(self, summonerId: str, region: str) -> Summoner:
         """Get a summoner object by summonerId."""
         return Summoner(region, self._api_key, summonerId=summonerId)
+    
+    def lol_status(self, region: str) -> LolStatus:
+        """Get the status of the League of Legends servers."""
+        return LolStatus(self._api_key, region)

@@ -9,6 +9,7 @@ A little project to test myself and create a test-driven development API wrapper
 ### implemented
 
 - Summoner-V4
+- Lol-Status-V4
 
 ### Will be implemented in the future
 
@@ -19,7 +20,6 @@ A little project to test myself and create a test-driven development API wrapper
 - Champion-V3
 - Champion-Mastery-V4
 - Lol-Challenges-V1
-- Lol-Status-V4
 - Tournament-V4
 
 
